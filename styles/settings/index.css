@@ -1,0 +1,174 @@
+.settings-panel {
+  position: relative;
+  margin-left: 240px; /* Sidebar space */
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  font-family: Poppins;
+  width: 80svw;
+}
+
+.settings-panel > form,
+.settings-panel > .section {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+/* Grid layout for the form */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+/* Make field take full width inside each column */
+.form-grid .field {
+  width: 100%;
+}
+
+/* Make full-width fields like textareas span both columns */
+.form-grid .field.full-width {
+  grid-column: span 2;
+}
+
+h2 {
+  font-size: 24px;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.section {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #374151;
+}
+input[type="range"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+input[type="number"] {
+  width: 80px;
+}
+input[type="range"] {
+  cursor: pointer;
+}
+#instruction_override {
+  height: 300px;
+}
+.field {
+  margin-bottom: 24px;
+}
+.field .input-group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.description {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-button {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-height: 200px;
+  overflow-y: auto;
+}
+.dropdown-options div {
+  padding: 8px;
+  cursor: pointer;
+}
+.dropdown-options div:hover {
+  background: #f3f4f6;
+}
+.save-button {
+  width: 180px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: 1px solid #2dafff;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  color: #2dafff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.save-button:hover {
+  background: #2dafff;
+  color: #fff;
+}
+.save-button svg {
+  display: block; /* prevents baseline shift */
+}
+
+.add-button {
+  width: 160px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: 1px solid #2dafff;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  color: #2dafff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 30px;
+}

@@ -1,0 +1,228 @@
+.back {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 111px;
+  align-items: center;
+  margin-left: 25px;
+  width: 90px;
+}
+.back a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #2dafff;
+  padding: 10px 15px;
+}
+
+.back a:hover {
+  background-color: rgba(167, 164, 164, 0.2);
+  border-radius: 5px;
+}
+
+.kb-container {
+  width: calc(100% - 61px);
+  /* height: 338px; */
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.kb-container h1,
+.kb-container h2 {
+  color: #555;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.kb-container p {
+  color: rgba(119, 119, 119, 0.8);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 228.571% */
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.kb-container svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.delete-button {
+  width: 110px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: 1px solid #ff5621;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  color: #ff5621;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.delete-button:hover {
+  color: #fff;
+  background-color: #ff5621;
+}
+
+.edit-button {
+  width: 90px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: 1px solid #2dafff;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  color: #2dafff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #2dafff;
+  color: #fff;
+}
+
+.kb-container img {
+  max-width: 80%; /* custom width */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+#toast-container > .toast {
+  font-family: "Poppins";
+}
+
+.swal2-popup {
+  text-align: center;
+  font-family: Poppins !important;
+}
+
+.swal2-validation-message {
+  margin: 0 !important;
+}
+
+.swal-btn-confirm {
+  width: 140px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 22px !important;
+  border: 1px solid #2dafff !important;
+  background: #fff !important;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2) !important;
+  color: #2dafff !important;
+  font-family: Poppins;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.swal-btn-confirm:hover {
+  background: #2dafff !important;
+  color: #fff !important;
+}
+
+.swal-btn-cancel {
+  width: 140px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 22px !important;
+  border: 1px solid #e71313 !important;
+  background: #fff !important;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2) !important;
+  color: #e71313 !important;
+  font-family: Poppins;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.swal-btn-cancel:hover {
+  background: #e71313 !important;
+  color: #fff !important;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .back {
+    margin-top: 160px;
+    margin-left: 0;
+  }
+
+  .kb-container {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .button-container {
+    padding-bottom: 20px;
+  }
+
+  .kb-container .delete-button {
+    width: 100px;
+    height: 30px;
+  }
+
+  .button-container .delete-button span {
+    display: none !important;
+  }
+
+  .kb-container .edit-button {
+    width: 100px;
+    height: 30px;
+  }
+
+  .button-container .edit-button span {
+    display: none;
+  }
+}
